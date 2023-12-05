@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Web application</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/efebd20f0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ////////////////header start / ///////////////////////////// -->
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="#">Laundry</a>
+                    <li class="nav-item list-unstyled dropdown">
+                        <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-content " aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item hd1"><a class="nav-link active" href="#">New Order</a></li>
+                            <li class="dropdown-item hd1"><a class="nav-link" href="#">Cleaning</a></li>
+                            <li class="dropdown-item hd1"><a class="nav-link" href="#">Ready</a></li>
+                            <li class="dropdown-item hd1"><a class="nav-link" href="#">To Receive</a></li>
+                        </ul>
+                    </li>
+
+                </div>
+                <ul class="navbar-nav  mb-2 mb-lg-0 ses">
+                    <li class="nav-item"><a class="nav-link active" href="#">New Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cleaning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ready</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">To Receive</a></li>
+                </ul>
+                <div class="sec-left">
+                    <ul class="d-flex align-items-center gap-3 mb-0">
+                        <li class="nav-item search-b">
+                            <input class="form-control" type="search" placeholder="search item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-message"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item round d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="#">
+                                RR
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ///////////////////////////header end/////////////////////////// -->
+    <div class="wrapper">
+
+        <main class="main-side">
+            <div class="row w-100">
+                <nav>
+                    <div class="nav nav-tabs tabs_sec1" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
+                            <div class="d-block">
+                               
+                                <h4>Washing & ironing</h4>
+
+                            </div>
+
+
+                        </button>
+
+                        <button class="nav-link" id=" Presser" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <div class="d-block">
+                                
+                                <h4> Presser</h4>
+
+                            </div>
+
+                        </button>
+                        <button class="nav-link" id="Dry" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <div class="d-block">
+                               
+                                <h4> Dry Cleaning</h4>
+
+                            </div>
+
+                        </button>
+                        <button class="nav-link" id="Shoe" data-bs-toggle="tab" data-bs-target="#nav-contact1"
+                            type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">
+                            <div class="d-block">
+                                
+                                <h4>Shoe Cleaning</h4>
+
+                            </div>
+
+                        </button>
+                        <button class="nav-link" id="Carpets" data-bs-toggle="tab" data-bs-target="#nav-contact2"
+                            type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">
+                            <div class="d-block">
+                               
+                                <h4> Carpets</h4>
+
+                            </div>
+
+                        </button>
+                        <button class="nav-link" id="Blankets" data-bs-toggle="tab" data-bs-target="#nav-contact3"
+                            type="button" role="tab" aria-controls="nav-contact3" aria-selected="false">
+                            <div class="d-block">
+                               
+                                <h4> Blankets & Quilts</h4>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+                </nav>
+
+
+                <div style="margin-top: 20px;" class="tab-content " id="nav-tabContent">
+                    <!-- /////first tab//////////// -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <div class="content-sec content-sec2 d-flex align-items-center ">
+
+                            <div class="items">
+                                <h4>Medical scrub</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Abaya </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Abayah&Tarhah Abaya and Scarf</h4>
+                            </div>
+                            <div class="items">
+                                <h4> Bath Rob Bath Robe </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Belover pullover </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Cap Cap</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Cotton Short</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Gutrah (Gutrah)</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Jacket Regular jacket</h4>
+                            </div>
+                            <div class="items">
+                                <h4> Jallabiah Jalabiah </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Jeans</h4>
+                            </div>
+                            <div class="items">
+                                <h4> Jumpsuit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Kids Clothes Children's clothing </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Lab Coat Medical coat </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Medium Towel </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Military T-Shirt </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Military Uniform Military uniform </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Military Uniform Dry Clean military suit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Normal Dress </h4>
+                            </div>
+                            <div class="items">
+                                <h4> Overcoat </h4>
+                            </div>
+                            <div class="items">
+                                <h4>pajamas pajamas </h4>
+                            </div>
+                            <div class="items">
+                                <h4>kistani Suit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Scarf shawl</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Sdareah Sdareah</h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+                            <div class="items">
+                                <h4></h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- ///////////////second tab/////////////////////// -->
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby=" Presser">
+                        <div class="content-sec con-2 content-sec2 d-flex align-items-center ">
+
+                            <div class="items">
+                                <h4> Abaya </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Abaya </h4>
+                            </div>
+                            <div class="items">
+                                <h4> Abayah&Tarhah Abaya and scarf </h4>
+                            </div>
+                            <div class="items">
+                                <h4> Bisht بشت </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Blover</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Cotton Short</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Dress, Evening</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Gutrah Gutrah</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Jacket </h4>
+                            </div>
+                            <div class="items">
+                                <h4> Jallabiah Jalabiah </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Jeans</h4>
+                            </div>
+                            <div class="items">
+                                <h4> Jumpsuit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Lab Coat Medical coat </h4>
+                            </div>
+
+
+                            <div class="items">
+                                <h4>Military T-Shirt </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Military Uniform Military uniform </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Military Uniform Dry Clean military suit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Normal Dress </h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>pajamas pajamas </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Pakistani Suit </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Pillow case pillow cover </h4>
+                            </div>
+                            <div class="items">
+                                <h4> Scrab Medical scrap </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Sdareah Sdareah</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Sheet Sharshaf </h4>
+                            </div>
+                            <div class="items">
+                                <h4>Shirt</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Shomagh Shemagh</h4>
+                            </div>
+                            <div class="items">
+                                <h4> Short shorts </h4>
+                            </div>
+
+                            <div class="items">
+                                <h4> Sleep shirt </h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>Sport Pants</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Suit3 3piece suit</h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>T-Shirt</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Tarhab put it up</h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>Thob</h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>Thoub cotton</h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>Thoub Kids</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Tie a neckite</h4>
+                            </div>
+
+                            <div class="items">
+                                <h4>UnderWare Long Pants</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Winter Thoub</h4>
+                            </div>
+                            <div class="items">
+                                <div class="d-block text-center">
+                                    <div>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <h4>Item</h4>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="d-block text-center">
+                                    <div>
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <h4>Photo</h4>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- //////////////third-tab//////////////////// -->
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="Dry">
+
+                        <div class="content-sec con-3 content-sec3 d-flex align-items-center ">
+
+                            <div class="items">
+                                <h4>Shirt Dry Clean Shirt</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Abaya Dry Clean Abaya</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Abaya&Tarahah Dry Clean Abaya & Scarf</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Belover Dry</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Clean pullover</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Bisht Bisht Dry Clean</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Blouse Dry Clean Blouse</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Dress Evening dry clean evening dress</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Farwah scalp Dry clean</h4>
+                            </div>
+                            <div class="items">
+                                <h4>Ghotra Winter ghotra dry clean</h4>
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui7.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>jacket dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui8.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>jacket dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui11.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Military uniform dry clean military suit</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui9.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Normal Dress dry</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui10.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Scarf dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui12.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Short dry clean shorts</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <h4>Silk dress dry clean silk dress</h4>
+                            </div>
+                            <div class="items">
+
+                                <img src="./img/sui1.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4 class="text">Suit2 dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui3.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4 class="text">Suit3 dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui5.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4 class="text">T-shirt dry clean</h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui13.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Tarahah dry clean scarf </h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <h4>Thoub color</h4>
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui4.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Thoub white dry clean white thoub </h4>
+                                </div>
+
+                            </div>
+                            <div class="items">
+                                <h4>Thoub winter dry clean winter dress</h4>
+                            </div>
+                            <div class="items">
+                                <img src="./img/sui6.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4>Tie dry clean tie</h4>
+                                </div>
+                            </div>
+
+                            <div class="items">
+                                <img src="./img/sui2.png" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <h4 class="text">Thoub winter dry clean winter dress</h4>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="d-block text-center">
+                                    <div>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <h4>Item</h4>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="d-block text-center">
+                                    <div>
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <h4>Photo</h4>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- ////////////four-tab//////////////////////////// -->
+
+                    <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="Shoe">
+                        <h4>This page is a work in progress.</h4>
+                    </div>
+
+                    <!-- //////////five-tab////////////////////////// -->
+
+                    <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="Carpets">
+                        <h4>This page is a work in progress.</h4>
+
+                    </div>
+
+
+                    <!-- //////////////////six - tab/////////////////////// -->
+
+                    <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="Blankets">
+                        <h4>This page is a work in progress.</h4>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+        <div class="payment-sec">
+            <div class="d-flex search-button">
+                <div class="input-group mb-3">
+                    <i class="fa-solid fa-magnifying-glass s1"></i>
+                    <input type="search" class="form-control ser" placeholder="Customer">
+                </div>
+                <div class="input-group mb-3">
+                    <i class="fa-solid fa-magnifying-glass s2"></i>
+                    <input type="search" class="form-control ser" placeholder="Product">
+                </div>
+            </div>
+            <table class="table1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>STORE</th>
+                        <th>REWARD</th>
+                        <th>VISIT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td class="wp">0.00</td>
+                    <td class="wp">4200</td>
+                    <td class="wp">19</td>
+                </tbody>
+            </table>
+            <div class="btn-sec d-flex align-items-center justify-content-between my-2">
+                <button class="btn btn-warning w-100"><i class="fa-regular fa-rectangle-list"></i></button>
+                <button class="btn btn-info w-100">PURCHASE</button>
+
+            </div>
+            <div class="table-responsive tbl-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="scrollable-tbody">
+                        <tr>
+                            <td>Red maxi-dress</td>
+                            <td>101</td>
+                            <td>1</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Classic blue jeans</td>
+                            <td>0013</td>
+                            <td>1</td>
+                            <td>35.00</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="table-responsive ">
+                <table class="table">
+                    <tfoot>
+                        <tr>
+                            <th>TOTAL</th>
+                            <th class="text-end">$85.00</th>
+                        </tr>
+                        <tr>
+                            <td>TAX</td>
+                            <td class="text-end">8.33</td>
+                        </tr>
+                        <tr>
+                            <td>NET</td>
+                            <td class="text-end">76.66</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
