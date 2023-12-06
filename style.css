@@ -218,6 +218,19 @@ a {
 .wrapper .main-side .con-3 .items {
   background-color: #e0c343;
 }
+.wrapper .main-side .con-4 .items {
+  background-color: #f3696b;
+}
+.wrapper .main-side .con-5 .items {
+  background-color: #b7e2f2;
+}
+.wrapper .main-side .con-6 .items {
+  background-color: #B18546;
+}
+.wrapper .main-side .content-sec  .items .overlay h4 {
+  background-color: #202020;
+}
+
 
 .wrapper .main-side .content-sec .items h4 {
   font-size: 13px !important;
