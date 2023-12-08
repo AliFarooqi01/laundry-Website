@@ -28,20 +28,41 @@
                         <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bars-staggered"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-content " aria-labelledby="navbarDropdown">
-                            <li class="dropdown-item hd1"><a class="nav-link active" href="#">New Order</a></li>
-                            <li class="dropdown-item hd1"><a class="nav-link" href="#">Cleaning</a></li>
-                            <li class="dropdown-item hd1"><a class="nav-link" href="#">Ready</a></li>
-                            <li class="dropdown-item hd1"><a class="nav-link" href="#">To Receive</a></li>
+                        <ul class="dropdown-menu dropdown-content nav-pills " id="pills-tab" role="tablist"
+                            aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item hd1" role="presentation"><a class="nav-link p-2 active"
+                                    id="pills-order-tab" data-bs-toggle="pill" data-bs-target="#pills-order"
+                                    type="button" role="tab" aria-controls="pills-order" aria-selected="true">New
+                                    Order</a></li>
+                            <li class="dropdown-item hd1" role="presentation"><a class="nav-link p-2"
+                                    id="pills-clean-tab" data-bs-toggle="pill" data-bs-target="#pills-clean"
+                                    type="button" role="tab" aria-controls="pills-clean"
+                                    aria-selected="false">Cleaning</a></li>
+                            <li class="dropdown-item hd1" role="presentation"><a class="nav-link p-2"
+                                    id="pills-ready-tab" data-bs-toggle="pill" data-bs-target="#pills-ready"
+                                    type="button" role="tab" aria-controls="pills-ready" aria-selected="false">Ready</a>
+                            </li>
+                            <li class="dropdown-item hd1" role="presentation"><a class="nav-link p-2"
+                                    id="pills-receive-tab" data-bs-toggle="pill" data-bs-target="#pills-receive"
+                                    type="button" role="tab" aria-controls="pills-receive" aria-selected="false">To
+                                    Receive</a></li>
                         </ul>
                     </li>
 
                 </div>
-                <ul class="navbar-nav  mb-2 mb-lg-0 ses">
-                    <li class="nav-item"><a class="nav-link active" href="#">New Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cleaning</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ready</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">To Receive</a></li>
+                <ul class="navbar-nav nav-pills  mb-2 mb-lg-0 ses" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" id="pills-order-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-order" type="button" role="tab"
+                            aria-controls="pills-order" aria-selected="true">New Order</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="pills-clean-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-clean" type="button" role="tab"
+                            aria-controls="pills-clean" aria-selected="false">Cleaning</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="pills-ready-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-ready" type="button" role="tab"
+                            aria-controls="pills-ready" aria-selected="false">Ready</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="pills-receive-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-receive" type="button" role="tab"
+                            aria-controls="pills-receive" aria-selected="false">To Receive</a></li>
                 </ul>
                 <div class="sec-left">
                     <ul class="d-flex align-items-center gap-3 mb-0">
@@ -69,882 +90,1569 @@
         </nav>
     </header>
 
-
     <!-- ///////////////////////////header end/////////////////////////// -->
-    <div class="wrapper">
-
-        <main class="main-side">
-            <div class="row w-100">
-                <nav>
-                    <div class="nav nav-tabs tabs_sec1" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">
-                            <div class="d-block">
-
-                                <h4>Washing & ironing</h4>
-
-                            </div>
 
 
-                        </button>
+    <!-- //////////////////Tabs-Section start/////////////////////////// -->
+    <div class="tab-content" id="pills-tabContent">
 
-                        <button class="nav-link" id=" Presser" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            <div class="d-block">
+        <!-- /////////////////////////ORDER SECTION START//////////////////////// -->
+        <main class="tab-pane fade show active orders-sec" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab"
+            tabindex="0">
+            <div class="wrapper ">
 
-                                <h4> Presser</h4>
+                <main class="main-side">
+                    <div class="row w-100">
+                        <nav>
+                            <div class="nav nav-tabs tabs_sec1" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">
+                                    <div class="d-block">
 
-                            </div>
+                                        <h4>Washing & ironing</h4>
 
-                        </button>
-                        <button class="nav-link" id="Dry" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
-                            <div class="d-block">
-
-                                <h4> Dry Cleaning</h4>
-
-                            </div>
-
-                        </button>
-                        <button class="nav-link" id="Shoe" data-bs-toggle="tab" data-bs-target="#nav-contact1"
-                            type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">
-                            <div class="d-block">
-
-                                <h4>Shoe Cleaning</h4>
-
-                            </div>
-
-                        </button>
-                        <button class="nav-link" id="Carpets" data-bs-toggle="tab" data-bs-target="#nav-contact2"
-                            type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">
-                            <div class="d-block">
-
-                                <h4> Carpets</h4>
-
-                            </div>
-
-                        </button>
-                        <button class="nav-link" id="Blankets" data-bs-toggle="tab" data-bs-target="#nav-contact3"
-                            type="button" role="tab" aria-controls="nav-contact3" aria-selected="false">
-                            <div class="d-block">
-
-                                <h4> Blankets & Quilts</h4>
-
-                            </div>
-
-                        </button>
-
-                    </div>
-                </nav>
+                                    </div>
 
 
-                <div style="margin-top: 20px;" class="tab-content " id="nav-tabContent">
-                    <!-- /////first tab//////////// -->
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                </button>
 
-                        <div class="content-sec content-sec2 d-flex align-items-center ">
+                                <button class="nav-link" id=" Presser" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">
+                                    <div class="d-block">
 
-                            <div class="items">
-                                <h4>Medical scrub</h4>
+                                        <h4> Presser</h4>
+
+                                    </div>
+
+                                </button>
+                                <button class="nav-link" id="Dry" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                    <div class="d-block">
+
+                                        <h4> Dry Cleaning</h4>
+
+                                    </div>
+
+                                </button>
+                                <button class="nav-link" id="Shoe" data-bs-toggle="tab" data-bs-target="#nav-contact1"
+                                    type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">
+                                    <div class="d-block">
+
+                                        <h4>Shoe Cleaning</h4>
+
+                                    </div>
+
+                                </button>
+                                <button class="nav-link" id="Carpets" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2"
+                                    aria-selected="false">
+                                    <div class="d-block">
+
+                                        <h4> Carpets</h4>
+
+                                    </div>
+
+                                </button>
+                                <button class="nav-link" id="Blankets" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact3" type="button" role="tab" aria-controls="nav-contact3"
+                                    aria-selected="false">
+                                    <div class="d-block">
+
+                                        <h4> Blankets & Quilts</h4>
+
+                                    </div>
+
+                                </button>
+
                             </div>
-                            <div class="items">
-                                <h4>Abaya </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Abayah&Tarhah Abaya and Scarf</h4>
-                            </div>
-                            <div class="items">
-                                <h4> Bath Rob Bath Robe </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Belover pullover </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Cap Cap</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Cotton Short</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Gutrah (Gutrah)</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Jacket Regular jacket</h4>
-                            </div>
-                            <div class="items">
-                                <h4> Jallabiah Jalabiah </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Jeans</h4>
-                            </div>
-                            <div class="items">
-                                <h4> Jumpsuit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Kids Clothes Children's clothing </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Lab Coat Medical coat </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Medium Towel </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Military T-Shirt </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Military Uniform Military uniform </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Military Uniform Dry Clean military suit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Normal Dress </h4>
-                            </div>
-                            <div class="items">
-                                <h4> Overcoat </h4>
-                            </div>
-                            <div class="items">
-                                <h4>pajamas pajamas </h4>
-                            </div>
-                            <div class="items">
-                                <h4>kistani Suit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Scarf shawl</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Sdareah Sdareah</h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
+                        </nav>
+
+
+                        <div style="margin-top: 20px;" class="tab-content con-sr " id="nav-tabContent">
+                            <!-- /////first tab//////////// -->
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+
+                                <div class="content-sec content-sec2 d-flex align-items-center ">
+
+                                    <div class="items">
+                                        <h4>Medical scrub</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Abaya </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Abayah&Tarhah Abaya and Scarf</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Bath Rob Bath Robe </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Belover pullover </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Cap Cap</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Cotton Short</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Gutrah (Gutrah)</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Jacket Regular jacket</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Jallabiah Jalabiah </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Jeans</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Jumpsuit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Kids Clothes Children's clothing </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Lab Coat Medical coat </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Medium Towel </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Military T-Shirt </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Military Uniform Military uniform </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Military Uniform Dry Clean military suit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Normal Dress </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Overcoat </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>pajamas pajamas </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>kistani Suit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Scarf shawl</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Sdareah Sdareah</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4></h4>
+                                    </div>
+
+
+                                </div>
                             </div>
 
-                            <div class="items">
-                                <h4></h4>
+                            <!-- ///////////////second tab/////////////////////// -->
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby=" Presser">
+                                <div class="content-sec con-2 content-sec2 d-flex align-items-center ">
+
+                                    <div class="items">
+                                        <h4> Abaya </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Abaya </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Abayah&Tarhah Abaya and scarf </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Bisht بشت </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Blover</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Cotton Short</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Dress, Evening</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Gutrah Gutrah</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Jacket </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Jallabiah Jalabiah </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Jeans</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Jumpsuit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Lab Coat Medical coat </h4>
+                                    </div>
+
+
+                                    <div class="items">
+                                        <h4>Military T-Shirt </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Military Uniform Military uniform </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Military Uniform Dry Clean military suit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Normal Dress </h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>pajamas pajamas </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Pakistani Suit </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Pillow case pillow cover </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Scrab Medical scrap </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Sdareah Sdareah</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Sheet Sharshaf </h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Shirt</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Shomagh Shemagh</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4> Short shorts </h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4> Sleep shirt </h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>Sport Pants</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Suit3 3piece suit</h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>T-Shirt</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Tarhab put it up</h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>Thob</h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>Thoub cotton</h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>Thoub Kids</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Tie a neckite</h4>
+                                    </div>
+
+                                    <div class="items">
+                                        <h4>UnderWare Long Pants</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Winter Thoub</h4>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <h4>Item</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+                                            <h4>Photo</h4>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </div>
 
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
+                            <!-- //////////////third-tab//////////////////// -->
+
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="Dry">
+
+                                <div class="content-sec con-3 content-sec3 d-flex align-items-center ">
+
+                                    <div class="items">
+                                        <h4>Shirt Dry Clean Shirt</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Abaya Dry Clean Abaya</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Abaya&Tarahah Dry Clean Abaya & Scarf</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Belover Dry</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Clean pullover</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Bisht Bisht Dry Clean</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Blouse Dry Clean Blouse</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Dress Evening dry clean evening dress</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Farwah scalp Dry clean</h4>
+                                    </div>
+                                    <div class="items">
+                                        <h4>Ghotra Winter ghotra dry clean</h4>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui7.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>jacket dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui8.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>jacket dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui11.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Military uniform dry clean military suit</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui9.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Normal Dress dry</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui10.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Scarf dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui12.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Short dry clean shorts</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <h4>Silk dress dry clean silk dress</h4>
+                                    </div>
+                                    <div class="items">
+
+                                        <img src="./img/sui1.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4 class="text">Suit2 dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui3.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4 class="text">Suit3 dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui5.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4 class="text">T-shirt dry clean</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui13.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Tarahah dry clean scarf </h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <h4>Thoub color</h4>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui4.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Thoub white dry clean white thoub </h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <h4>Thoub winter dry clean winter dress</h4>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui6.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Tie dry clean tie</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="items">
+                                        <img src="./img/sui2.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4 class="text">Thoub winter dry clean winter dress</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <h4>Item</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+                                            <h4>Photo</h4>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
                             </div>
 
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
+                            <!-- ////////////four-tab//////////////////////////// -->
+
+                            <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="Shoe">
+                                <div class="content-sec con-4 content-sec3 d-flex align-items-center ">
+
+
+                                    <div class="items">
+                                        <img src="./img/sui14.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>DUST BAG غلاف ملابس فاخر </h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui15.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Fabric Shoes احذية قماشية</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui16.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4> Hotel Slipper شبشب فندقي </h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui17.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4> Kids Shoes حذاء اطفال </h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui18.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4> Slipper نعال </h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui19.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4> تنظيف حذاء رياضي Sport Shoes</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui20.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4> دمية Doll</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui21.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>شنطة يد Purse</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui22.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>شنطة سفر Travel Bag</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <h4>القطعة Item</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+                                            <h4>صورة Photo</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="items">
-                                <h4></h4>
+                            <!-- //////////five-tab////////////////////////// -->
+
+                            <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="Carpets">
+                                <div class="content-sec con-5 content-sec3 d-flex align-items-center ">
+
+
+                                    <div class="items">
+                                        <img src="./img/sui23.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Prayer rug 1</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui24.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Prayer rug 2</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui25.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Carpets Washing</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui26.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Special Carpets Washing</h4>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <h4 style="color:#000; font-weight: 800 !important;">القطعة Item</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+                                            <h4 style="color:#000; font-weight: 800 !important;">صورة Photo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="items">
-                                <h4></h4>
-                            </div>
 
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
+                            <!-- //////////////////six - tab/////////////////////// -->
 
-                            <div class="items">
-                                <h4></h4>
-                            </div>
-                            <div class="items">
-                                <h4></h4>
-                            </div>
+                            <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="Blankets">
+                                <div class="content-sec con-6 content-sec3 d-flex align-items-center ">
 
+
+                                    <div class="items">
+                                        <img src="./img/sui27.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Big blanket</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui28.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Big duvet</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui29.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Medium blanket</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui30.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Medium duvet</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui31.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Pillow Medium</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui32.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Pillow Small</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui33.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Single bed mattress</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui34.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Samll blanket</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui35.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>gloves</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui36.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Table Napkin</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui37.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Jonty</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui38.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Single curtain</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui39.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Double curtain</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui40.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Table cloth</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="items">
+                                        <img src="./img/sui41.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Duvet cover Quilt Cover</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui42.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Pillow case</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui43.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Sheet</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <img src="./img/sui44.png" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <h4>Small duvet</h4>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i style="color: #fff;" class="fas fa-plus"></i>
+                                            </div>
+                                            <h4 style="color:#000; font-weight: 800 !important;">القطعة Item</h4>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="d-block text-center">
+                                            <div>
+                                                <i style="color: #fff;" class="fas fa-camera"></i>
+                                            </div>
+                                            <h4 style="color:#000; font-weight: 800 !important;">صورة Photo</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
+
+
+
+
+
                     </div>
-
-                    <!-- ///////////////second tab/////////////////////// -->
-
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby=" Presser">
-                        <div class="content-sec con-2 content-sec2 d-flex align-items-center ">
-
-                            <div class="items">
-                                <h4> Abaya </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Abaya </h4>
-                            </div>
-                            <div class="items">
-                                <h4> Abayah&Tarhah Abaya and scarf </h4>
-                            </div>
-                            <div class="items">
-                                <h4> Bisht بشت </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Blover</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Cotton Short</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Dress, Evening</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Gutrah Gutrah</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Jacket </h4>
-                            </div>
-                            <div class="items">
-                                <h4> Jallabiah Jalabiah </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Jeans</h4>
-                            </div>
-                            <div class="items">
-                                <h4> Jumpsuit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Lab Coat Medical coat </h4>
-                            </div>
-
-
-                            <div class="items">
-                                <h4>Military T-Shirt </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Military Uniform Military uniform </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Military Uniform Dry Clean military suit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Normal Dress </h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>pajamas pajamas </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Pakistani Suit </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Pillow case pillow cover </h4>
-                            </div>
-                            <div class="items">
-                                <h4> Scrab Medical scrap </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Sdareah Sdareah</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Sheet Sharshaf </h4>
-                            </div>
-                            <div class="items">
-                                <h4>Shirt</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Shomagh Shemagh</h4>
-                            </div>
-                            <div class="items">
-                                <h4> Short shorts </h4>
-                            </div>
-
-                            <div class="items">
-                                <h4> Sleep shirt </h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>Sport Pants</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Suit3 3piece suit</h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>T-Shirt</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Tarhab put it up</h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>Thob</h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>Thoub cotton</h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>Thoub Kids</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Tie a neckite</h4>
-                            </div>
-
-                            <div class="items">
-                                <h4>UnderWare Long Pants</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Winter Thoub</h4>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                    <h4>Item</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-camera"></i>
-                                    </div>
-                                    <h4>Photo</h4>
-                                </div>
-                            </div>
-
-
+                </main>
+                <div class="payment-sec">
+                    <div class="d-flex search-button">
+                        <div class="input-group mb-3">
+                            <i class="fa-solid fa-magnifying-glass s1"></i>
+                            <input type="search" class="form-control ser" placeholder="Customer">
+                        </div>
+                        <div class="input-group mb-3">
+                            <i class="fa-solid fa-magnifying-glass s2"></i>
+                            <input type="search" class="form-control ser" placeholder="Product">
                         </div>
                     </div>
-
-                    <!-- //////////////third-tab//////////////////// -->
-
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="Dry">
-
-                        <div class="content-sec con-3 content-sec3 d-flex align-items-center ">
-
-                            <div class="items">
-                                <h4>Shirt Dry Clean Shirt</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Abaya Dry Clean Abaya</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Abaya&Tarahah Dry Clean Abaya & Scarf</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Belover Dry</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Clean pullover</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Bisht Bisht Dry Clean</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Blouse Dry Clean Blouse</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Dress Evening dry clean evening dress</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Farwah scalp Dry clean</h4>
-                            </div>
-                            <div class="items">
-                                <h4>Ghotra Winter ghotra dry clean</h4>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui7.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>jacket dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui8.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>jacket dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui11.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Military uniform dry clean military suit</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui9.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Normal Dress dry</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui10.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Scarf dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui12.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Short dry clean shorts</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <h4>Silk dress dry clean silk dress</h4>
-                            </div>
-                            <div class="items">
-
-                                <img src="./img/sui1.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4 class="text">Suit2 dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui3.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4 class="text">Suit3 dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui5.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4 class="text">T-shirt dry clean</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui13.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Tarahah dry clean scarf </h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <h4>Thoub color</h4>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui4.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Thoub white dry clean white thoub </h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <h4>Thoub winter dry clean winter dress</h4>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui6.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Tie dry clean tie</h4>
-                                </div>
-                            </div>
-
-                            <div class="items">
-                                <img src="./img/sui2.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4 class="text">Thoub winter dry clean winter dress</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                    <h4>Item</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-camera"></i>
-                                    </div>
-                                    <h4>Photo</h4>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-                    <!-- ////////////four-tab//////////////////////////// -->
-
-                    <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="Shoe">
-                        <div class="content-sec con-4 content-sec3 d-flex align-items-center ">
-
-                            
-                            <div class="items">
-                                <img src="./img/sui14.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>DUST BAG غلاف ملابس فاخر </h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui15.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Fabric Shoes احذية قماشية</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui16.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4> Hotel Slipper شبشب فندقي </h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui17.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>  Kids Shoes حذاء اطفال </h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui18.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4> Slipper نعال </h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui19.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4> تنظيف حذاء رياضي Sport Shoes</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui20.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>  دمية  Doll</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui21.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>شنطة يد Purse</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui22.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>شنطة سفر  Travel Bag</h4>
-                                </div>
-                            </div>
-                            
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                    <h4>القطعة Item</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-camera"></i>
-                                    </div>
-                                    <h4>صورة Photo</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- //////////five-tab////////////////////////// -->
-
-                    <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="Carpets">
-                        <div class="content-sec con-5 content-sec3 d-flex align-items-center ">
-
-                            
-                            <div class="items">
-                                <img src="./img/sui23.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Prayer rug 1</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui24.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Prayer rug 2</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui25.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Carpets Washing</h4>
-                                </div>
-
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui26.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Special Carpets Washing</h4>
-                                </div>
-
-                            </div>
-                           
-                            
-                            
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                    <h4 style="color:#000; font-weight: 800 !important;">القطعة Item</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i class="fas fa-camera"></i>
-                                    </div>
-                                    <h4 style="color:#000; font-weight: 800 !important;">صورة Photo</h4>
-                                </div>
-                            </div>
-                        </div>
+                    <table class="table1" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>STORE</th>
+                                <th>REWARD</th>
+                                <th>VISIT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td class="wp">0.00</td>
+                            <td class="wp">4200</td>
+                            <td class="wp">19</td>
+                        </tbody>
+                    </table>
+                    <div class="btn-sec d-flex align-items-center justify-content-between my-2">
+                        <button class="btn btn-warning w-100"><i class="fa-regular fa-rectangle-list"></i></button>
+                        <button class="btn btn-info w-100">PURCHASE</button>
 
                     </div>
-
-
-                    <!-- //////////////////six - tab/////////////////////// -->
-
-                    <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="Blankets">
-                        <div class="content-sec con-6 content-sec3 d-flex align-items-center ">
-
-                            
-                            <div class="items">
-                                <img src="./img/sui27.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Big blanket</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui28.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Big duvet</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui29.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Medium blanket</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui30.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Medium duvet</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui31.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Pillow Medium</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui32.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Pillow Small</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui33.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Single bed mattress</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui34.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Samll blanket</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui35.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>gloves</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui36.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Table Napkin</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui37.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Jonty</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui38.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Single curtain</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui39.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Double curtain</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui40.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Table cloth</h4>
-                                </div>
-                            </div>
-
-                            <div class="items">
-                                <img src="./img/sui41.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Duvet cover Quilt Cover</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui42.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Pillow case</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui43.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Sheet</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <img src="./img/sui44.png" alt="Avatar" class="image">
-                                <div class="overlay">
-                                    <h4>Small duvet</h4>
-                                </div>
-                            </div>
-                                                    
-                            
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i style="color: #fff;" class="fas fa-plus"></i>
-                                    </div>
-                                    <h4 style="color:#000; font-weight: 800 !important;">القطعة Item</h4>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="d-block text-center">
-                                    <div>
-                                        <i style="color: #fff;" class="fas fa-camera"></i>
-                                    </div>
-                                    <h4 style="color:#000; font-weight: 800 !important;">صورة Photo</h4>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="table-responsive tbl-content">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Code</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scrollable-tbody">
+                                <tr>
+                                    <td>Red maxi-dress</td>
+                                    <td>101</td>
+                                    <td>1</td>
+                                    <td>50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Classic blue jeans</td>
+                                    <td>0013</td>
+                                    <td>1</td>
+                                    <td>35.00</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
 
                     </div>
-
+                    <div class="table-responsive ">
+                        <table class="table">
+                            <tfoot>
+                                <tr>
+                                    <th>TOTAL</th>
+                                    <th class="text-end">$85.00</th>
+                                </tr>
+                                <tr>
+                                    <td>TAX</td>
+                                    <td class="text-end">8.33</td>
+                                </tr>
+                                <tr>
+                                    <td>NET</td>
+                                    <td class="text-end">76.66</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
-
-
-
-
-
             </div>
         </main>
-        <div class="payment-sec">
-            <div class="d-flex search-button">
-                <div class="input-group mb-3">
-                    <i class="fa-solid fa-magnifying-glass s1"></i>
-                    <input type="search" class="form-control ser" placeholder="Customer">
-                </div>
-                <div class="input-group mb-3">
-                    <i class="fa-solid fa-magnifying-glass s2"></i>
-                    <input type="search" class="form-control ser" placeholder="Product">
-                </div>
-            </div>
-            <table class="table1" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>STORE</th>
-                        <th>REWARD</th>
-                        <th>VISIT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <td class="wp">0.00</td>
-                    <td class="wp">4200</td>
-                    <td class="wp">19</td>
-                </tbody>
-            </table>
-            <div class="btn-sec d-flex align-items-center justify-content-between my-2">
-                <button class="btn btn-warning w-100"><i class="fa-regular fa-rectangle-list"></i></button>
-                <button class="btn btn-info w-100">PURCHASE</button>
 
-            </div>
-            <div class="table-responsive tbl-content">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Code</th>
-                            <th>Qty</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody class="scrollable-tbody">
-                        <tr>
-                            <td>Red maxi-dress</td>
-                            <td>101</td>
-                            <td>1</td>
-                            <td>50.00</td>
-                        </tr>
-                        <tr>
-                            <td>Classic blue jeans</td>
-                            <td>0013</td>
-                            <td>1</td>
-                            <td>35.00</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+        <!-- /////////////////////////ORDER SECTION END//////////////////////// -->
 
+
+        <!-- ////////////////////////////////CLEANING SECTION START/////////////////////////////// -->
+        <main class="cleaning-sec tab-pane fade" id="pills-clean" role="tabpanel" aria-labelledby="pills-clean-tab"
+            tabindex="0">
+            <header class="navbar navbar-expand-lg navbar-light bg-light border py-3">
+                <div class="container">
+
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">Cleaning</a>
+
+                    <!-- Toggler Button -->
+                    <button style="border: none; outline: none;" class="navbar-toggler bg-transparent border-n"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse cl-sec" id="navbarNav">
+                        <ul class="navbar-nav gap-1">
+                            <li class="nav-item">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Reports</option>
+                                    <option value="1">Hand the package to the driver</option>
+                                    <option value="2">Delete the report</option>
+                                    <option value="3">Delete report (no dates)</option>
+                                    <option value="4">Cleaned today</option>
+                                    <option value="5">Cleaning was done yesterday</option>
+                                </select>
+                            </li>
+                            <li class="nav-item">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Filter section</option>
+                                    <option value="1">Washing and Ironing (142)</option>
+                                    <option value="2">Ironing (17)</option>
+                                    <option value="3">Dry Cleaning (61)</option>
+                                    <option value="4">Shoe Cleaning (50)</option>
+                                    <option value="5">Carpets (1)</option>
+                                    <option value="6">Blankets and Quilts (48)</option>
+                                </select>
+                            </li>
+                            <li class="nav-item">
+                                <select id="swapCleanMetrics" class="form-select form-select-sm"
+                                    onchange="refresh_clean_stats()">
+                                    <option value="0">All</option>
+                                    <option value="1" data-cmp_date="07/12/23">Today</option>
+                                    <option value="4" data-cmp_date="07/12/23">Today & Overdue</option>
+                                    <option value="2" data-cmp_date="08/12/23">Tomorrow</option>
+                                    <option value="3" data-cmp_date="07/12/23">Overdue</option>
+                                </select>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn bg-light btn-tab1 dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Orders (362)</a></li>
+                                <li><a class="dropdown-item" href="#">The number of pieces (1,1770)</a></li>
+                                <li><a class="dropdown-item" href="#">Weight (17kg)</a></li>
+                                <li><a class="dropdown-item" href="#">The value (SAR 12,379)</a></li>
+                                <li><a class="dropdown-item" href="#">Unpaid (SAR 7,783)</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Update Button -->
+                        <button class="btn bg-light btn-tab1" type="button">Update the order</button>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- /////////////////////////table////////////////////////////// -->
+            <div class="container-fluid p-0">
+                <style>
+                    .table1 th,
+                    .table1 td {
+                        text-align: center;
+                    }
+
+                    .table1 th:nth-child(8),
+                    .table1 td:nth-child(8) {
+                        text-align: left;
+                    }
+
+                    .table1 th,
+                    .table1 td {
+                        vertical-align: middle;
+                    }
+                </style>
+                <div class="table-responsive ">
+                    <table class="table table-bordered table1 table-striped">
+                        <thead>
+                            <tr class=" cl-w">
+                                <th>ID</th>
+                                <th>It will be ready in no time</th>
+                                <th>Put in place</th>
+                                <th>the customer</th>
+                                <th>Order</th>
+                                <th>The number of pieces</th>
+                                <th>Any Comments</th>
+                                <th class="d-flex align-items-center gap-3">The Total <input style="width: 100px;"
+                                        type="text" class="form-control " placeholder="Filter"></th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class=" cl-w">
+                                <td>14003</td>
+                                <td>08/12/23 5pm</td>
+                                <td>07/12/23</td>
+                                <td>raseed</td>
+                                <td>
+                                    Military T-Shirt فانيلة عسكرية (غ) x 1<br>
+                                    Military Uniform بدلة عسكرية (غ) x 1<br>
+                                    Thoub ثوب (غ) x 1<br>
+
+                                </td>
+                                <td class="w0">34</td>
+                                <td class="w0"></td>
+                                <td>
+                                    SAR 40.00
+                                    <span class="ml-2  ">
+                                        <i class="fas fa-dollar-sign cl-blue"></i>
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn btn-tab1 bg-light p-1">sweep up</span>
+                                </td>
+                            </tr>
+                            <tr class=" cl-w">
+                                <td>14004</td>
+                                <td>08/12/23 5pm</td>
+                                <td>07/12/23</td>
+                                <td>raseed</td>
+                                <td>
+                                    Military T-Shirt فانيلة عسكرية (غ) x 1<br>
+                                    Military Uniform بدلة عسكرية (غ) x 1<br>
+                                    Thoub ثوب (غ) x 1<br>
+                                    Underwear فنيلة داخلية (غ) x 3<br>
+
+                                </td>
+                                <td class="w0">18</td>
+                                <td class="w0"></td>
+                                <td>
+                                    SAR 61.00
+                                    <span class="ml-2  ">
+                                        <i class="fas fa-dollar-sign cl-blue"></i>
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn btn-tab1 bg-light p-1">sweep up</span>
+                                </td>
+                            </tr>
+                            <tr class=" cl-w">
+                                <td>14002</td>
+                                <td>08/12/23 5pm</td>
+                                <td>07/12/23</td>
+                                <td>raseed</td>
+                                <td>
+                                    Military T-Shirt فانيلة عسكرية (غ) x 1<br>
+                                    Military Uniform بدلة عسكرية (غ) x 1<br>
+                                    Thoub ثوب (غ) x 1<br>
+                                    Underwear فنيلة داخلية (غ) x 3<br>
+                                    Underwear سروال قصير داخلي (غ) x 4<br>
+                                    Underwear سروال طويل داخلي (غ) x 3
+                                </td>
+                                <td class="w0">14</td>
+                                <td class="w0"></td>
+                                <td>
+                                    SAR 41.00
+                                    <span class="ml-2  ">
+                                        <i class="fas fa-dollar-sign cl-blue "></i>
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue "></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue "></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn btn-tab1 bg-light p-1">sweep up</span>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="table-responsive ">
-                <table class="table">
-                    <tfoot>
-                        <tr>
-                            <th>TOTAL</th>
-                            <th class="text-end">$85.00</th>
-                        </tr>
-                        <tr>
-                            <td>TAX</td>
-                            <td class="text-end">8.33</td>
-                        </tr>
-                        <tr>
-                            <td>NET</td>
-                            <td class="text-end">76.66</td>
-                        </tr>
-                    </tfoot>
-                </table>
+        </main>
+
+        <!-- ////////////////////////////////CLEANING SECTION END/////////////////////////////// -->
+
+        <!-- ////////////////////////////////READY SECTION START/////////////////////////////// -->
+        <main class="Ready-sec tab-pane fade" id="pills-ready" role="tabpanel" aria-labelledby="pills-ready-tab"
+            tabindex="0">
+            <header class="navbar navbar-expand-lg navbar-light bg-light border py-3">
+                <div class="container">
+
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">Ready</a>
+
+                    <!-- Toggler Button -->
+                    <button style="border: none; outline: none;" class="navbar-toggler bg-transparent border-n"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse cl-sec" id="navbarNav">
+                        <ul class="navbar-nav gap-1">
+                            <li class="nav-item">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Reports</option>
+                                    <option value="1">Today is complete</option>
+                                    <option value="2">Receipt from customer</option>
+                                    <option value="3">Run audit</option>
+                                    <option value="4">View audit</option>
+                                    <option value="5">Submit to deadstock</option>
+                                </select>
+                            </li>
+                            <li class="nav-item">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example"">
+                                <option selected>All Orders</option>
+                                <optgroup label=" Order Type">
+                                    <option value="-1">In store/available</option>
+                                    <option value="-2">Delivery Service</option>
+                                    </optgroup>
+                                    <optgroup label="طرق/ مسارات">
+                                        <option value="0">#0 - Northeast</option>
+                                        <option value="1">#1 - Southeast</option>
+                                        <option value="2">#2 - Northwest</option>
+                                        <option value="3">#3 - Southwest</option>
+                                    </optgroup>
+
+                                </select>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+
+                        <div class="dropdown">
+                            <button class="btn bg-light btn-tab1 dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Orders (946)</a></li>
+                                <li><a class="dropdown-item" href="#">The number of pieces (5,586)</a></li>
+                                <li><a class="dropdown-item" href="#">The value (SAR 33,330)</a></li>
+                                <li><a class="dropdown-item" href="#">Unpaid (SAR 27,660)</a></li>
+
+                            </ul>
+                        </div>
+
+                        <button class="btn bg-light btn-tab1" type="button">Arrange The Shelves</button>
+                        <!-- Update Button -->
+                        <button class="btn bg-light btn-tab1" type="button">Update the order</button>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- /////////////////////////////////////////////////////// -->
+            <div class="container-fluid p-0">
+                <style>
+                    .table1 th,
+                    .table1 td {
+                        text-align: center;
+                    }
+
+                    .table1 th:nth-child(8),
+                    .table1 td:nth-child(8) {
+                        text-align: left;
+                    }
+
+                    .table1 th,
+                    .table1 td {
+                        vertical-align: middle;
+                    }
+                </style>
+                <div class="table-responsive ">
+                    <table class="table table-bordered  table-striped table1">
+                        <thead>
+                            <tr class=" cl-w">
+                                <th>ID</th>
+                                <th>Developed</th>
+                                <th>Ready During</th>
+                                <th>The customer</th>
+                                <th>Order</th>
+                                <th>The number of pieces</th>
+                                <th>Comments</th>
+                                <th class="text-center">#</th>
+                                <th>Paid</th>
+                                <th class="d-flex align-items-center gap-3 justify-content-center">The Total <input
+                                        style="width: 100px;" type="text" class="form-control " placeholder="Filter">
+                                </th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class=" cl-w">
+                                <td>1</td>
+                                <td>06/12/23 </td>
+                                <td>07/12/23</td>
+                                <td>Fahad AL Harib</td>
+                                <td>
+                                    short(s) x 1 <br>
+                                    T-shirt(s) x 3<br>
+                                    x 1<br>
+
+                                </td>
+                                <td class="w-2">4</td>
+                                <td class="w0"></td>
+                                <td class="w0"></td>
+                                <td></td>
+
+                                <td>
+                                    SAR 40.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+
+                            <tr class=" cl-w">
+                                <td>2</td>
+                                <td>04/12/23 </td>
+                                <td>03/12/23</td>
+                                <td>Javed AL Rashid</td>
+                                <td>
+                                    jeans(s) x 3 <br>
+                                    T-shirt(s) x 3<br>
+                                    x 1<br>
+
+                                </td>
+                                <td class="w-2">8</td>
+                                <td class="w0"></td>
+                                <td class="w0"></td>
+                                <td></td>
+
+                                <td>
+                                    SAR 30.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+                            <tr class=" cl-w">
+                                <td>3</td>
+                                <td>05/12/23 </td>
+                                <td>06/12/23</td>
+                                <td>Sheikh AL Rashid</td>
+                                <td>
+                                    jeans(s) x 3 <br>
+                                    T-shirt(s) x 3<br>
+                                    x 1<br>
+
+                                </td>
+                                <td class="w-2">5</td>
+                                <td class="w0"></td>
+                                <td class="w0"></td>
+                                <td></td>
+
+                                <td>
+                                    SAR 70.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+                            <tr class=" cl-w">
+                                <td>4</td>
+                                <td>05/12/23 </td>
+                                <td>08/12/23</td>
+                                <td>Rashid</td>
+                                <td>
+                                    jeans(s) x 3 <br>
+                                    T-shirt(s) x 3<br>
+                                    x 1<br>
+
+                                </td>
+                                <td class="w-2">12</td>
+                                <td class="w0"></td>
+                                <td class="w0"></td>
+                                <td></td>
+
+                                <td>
+                                    SAR 30.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+                            <tr class=" cl-w">
+                                <td>5</td>
+                                <td>08/12/23 </td>
+                                <td>09/12/23</td>
+                                <td>Rashid</td>
+                                <td>
+                                    jeans(s) x 3 <br>
+                                    T-shirt(s) x 3<br>
+                                    x 1<br>
+
+                                </td>
+                                <td class="w-2">11</td>
+                                <td class="w0"></td>
+                                <td class="w0"></td>
+                                <td></td>
+
+                                <td>
+                                    SAR 80.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-print cl-blue"></i> <!-- Replace with actual print icon -->
+                                    </span>
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+
+
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </main>
+        <!-- ////////////////////////////////READY SECTION END/////////////////////////////// -->
+
+        <!-- ////////////////////////////////TO RECEIVE SECTION START//////////////////////////////// -->
+
+
+        <main class="Receive-sec tab-pane fade" id="pills-receive" role="tabpanel" aria-labelledby="pills-receive-tab"
+            tabindex="0">
+            <header class="navbar navbar-expand-lg navbar-light bg-light border py-3">
+                <div class="container">
+
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">TO Receive</a>
+
+                    <!-- Toggler Button -->
+
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse cl-sec" id="navbarNav">
+
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn bg-light btn-tab1 dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Orders (20)</a></li>
+                                <li><a class="dropdown-item" href="#">The number of pieces (0)</a></li>
+                                <li><a class="dropdown-item" href="#">The value (SAR0)</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn bg-light btn-tab1" type="button">Arrange The Shelves</button>
+                        <!-- Update Button -->
+                        <button class="btn bg-light btn-tab1" type="button">Update the order</button>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- /////////////////////////////////////////////////////// -->
+            <div class="container-fluid p-0">
+                <style>
+                    .table1 th,
+                    .table1 td {
+                        text-align: center;
+                    }
+
+                    .table1 th:nth-child(8),
+                    .table1 td:nth-child(8) {
+                        text-align: left;
+                    }
+
+                    .table1 th,
+                    .table1 td {
+                        vertical-align: middle;
+                    }
+                </style>
+                <div class="table-responsive ">
+                    <table class="table table-bordered table1 table-striped">
+                        <thead>
+                            <tr class=" cl-w">
+                                <th>ID</th>
+                                <th>Developed</th>
+                                <th>The customer</th>
+                                <th>Communication</th>
+                                <th>Order</th>
+                                <th>The number of pieces</th>
+                                <th>Notes</th>
+                                <th>The Receipt</th>
+                                <th class="d-flex align-items-center gap-3 justify-content-center">SUM <input
+                                        style="width: 100px;" type="text" class="form-control " placeholder="Filter">
+                                </th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class=" cl-w">
+                                <td>1</td>
+                                <td>06/12/23 </td>
+                                <td>07/12/23</td>
+                                <td>
+                                    Delivery Service <br>
+                                    24.75472358830246 <br>
+                                    0547370030 <br>
+                                    M.a.s90@windowslive.com <br>
+
+                                </td>
+                                <td class="w0"></td>
+                                <td class="w-2">0</td>
+                                <td class="w0"></td>
+                                <td>09/12/23 <br>
+                                    2pm-4pm</td>
+
+                                <td>
+                                    SAR 40.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+
+                            <tr class=" cl-w">
+                                <td>2</td>
+                                <td>07/12/23 </td>
+                                <td>08/12/23</td>
+                                <td>
+                                    Delivery service <br>
+                                    24.856672151720836 <br>
+                                    0554408006 <br>
+                                    @privaterelay.appleid.com <br>
+
+                                </td>
+                                <td class="w0"></td>
+                                <td class="w-2">0</td>
+                                <td class="w0"></td>
+                                <td>09/12/23 <br>
+                                    2pm-4pm</td>
+
+                                <td>
+                                    SAR 100.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+
+                            <tr class=" cl-w">
+                                <td>3</td>
+                                <td>09/12/23 </td>
+                                <td>10/12/23</td>
+                                <td>
+                                    Delivery service <br>
+                                    24.80661700038824 <br>
+                                    0555400991 <br>
+                                    m.subaihin@gmail.com b <br>
+
+                                </td>
+                                <td class="w0"></td>
+                                <td class="w-2">0</td>
+                                <td class="w0"></td>
+                                <td>09/12/23 <br>
+                                    2pm-4pm</td>
+
+                                <td>
+                                    SAR 70.00
+
+                                    <span class="ml-2">
+                                        <i class="fa fa-edit cl-blue"></i> <!-- Replace with actual edit icon -->
+                                    </span>
+
+
+                                    <span class="btn bg-light btn-tab1 p-1">i receive</span>
+                                </td>
+                            </tr>
+
+
+
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+
     </div>
+    <!-- //////////////////Tabs-Section END/////////////////////////// -->
+
+
+
+
+    <!-- ////////////////////////////////TO RECEIVE SECTION END//////////////////////////////// -->
+
+
 </body>
 
 </html>

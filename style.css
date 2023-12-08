@@ -17,6 +17,15 @@ body {
   background-color: #fff;
   color: #757575;
 }
+.cl-blue{
+  color: #00aefc !important;
+}
+.w0{
+  width: 0px !important;
+}
+.w-2{
+  width: 20px !important;
+}
 
 a {
   text-decoration: none !important;
@@ -74,6 +83,10 @@ a {
 .hd1 {
   display: none;
 }
+.orders-sec .con-sr{
+  overflow-y: scroll;
+  height: 600px;
+}
 
 @media (max-width:767.98px) {
   .ses {
@@ -81,7 +94,10 @@ a {
   }
 
   .hd1 {
-    display: unset;
+    display: block;
+  }
+  .orders-sec .con-sr{
+    height: 300px;
   }
 
 }
@@ -218,16 +234,20 @@ a {
 .wrapper .main-side .con-3 .items {
   background-color: #e0c343;
 }
+
 .wrapper .main-side .con-4 .items {
   background-color: #f3696b;
 }
+
 .wrapper .main-side .con-5 .items {
   background-color: #b7e2f2;
 }
+
 .wrapper .main-side .con-6 .items {
   background-color: #B18546;
 }
-.wrapper .main-side .content-sec  .items .overlay h4 {
+
+.wrapper .main-side .content-sec .items .overlay h4 {
   background-color: #202020;
 }
 
@@ -291,8 +311,19 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/* ////////////////ready section css start/////////////////// */
+.btn-tab1{
+  border-width: 1px;
+  border-color: #00aefc !important;
+  color: #00aefc;
+  border-radius: 4px;
+  outline: none;
+}
+
+
 
 @media (max-width:767.98px) {
+
 
   .wrapper .payment-sec .tbl-content {
 
@@ -308,12 +339,51 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  /* ///////////table-cleaning -section start////////////// */
+  .cl-sec {
+    padding: 15px 0;
+  }
+
+  .table-responsive {
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  .cl-w {
+    border-width: 2px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .cl-w th,
+  td {
+    border-width: 2px;
+  }
+
+  .cl-w td {
+    border-width: 2px;
+  }
+  .w0{
+    width: unset !important;
+  }
+  .w-2{
+    width: unset !important;
+  }
+
+  /* ///////////table-cleaning -section end////////////// */
+
 }
 
 @media (min-width:768px) and (max-width :1024px) {
+
+  .cl-sec {
+    padding: 15px 0;
+  }
+
   .wrapper {
     flex-direction: row;
   }
+
 
   .wrapper .main-side .content-sec {
     display: grid !important;
